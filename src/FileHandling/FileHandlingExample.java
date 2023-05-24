@@ -87,6 +87,15 @@ public class FileHandlingExample {
         }
     }
 
+    //Create a file and write text into it
+    private static void saveDecompressedText(String text, String filePath) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(text);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     // Check if a file exists
     public static boolean exists(String fileName) {
         File file = new File(fileName);
