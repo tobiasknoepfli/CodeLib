@@ -88,9 +88,17 @@ public class Strings {
         System.out.println(reversed);
 
         /* JOINING STRINGS
-         Syntax:    join(delimiter, Array) */
+        Syntax:    join(delimiter, Array) */
         String[] joinWords = { "Hello", "World", "Java" };
         String joined = String.join(" ", joinWords);
         System.out.println(joined);
+
+        /* SPECIAL CHARACTERS
+         */
+        System.out.println("Backslash:"+"\t"+"\t"+"\t"+"\\"+"\\");
+        System.out.println("Tab:"+"\t"+"\t"+"\t"+"\t"+  "\\" +"t");
+        System.out.println("New Line:"+"\t"+ "\t"+"\t"+"\\"+"n");
+        System.out.println("Quotation Marks>"+"" +
+                "\t"+"\\"+ "\"");
     }
 }
