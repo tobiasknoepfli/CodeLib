@@ -31,29 +31,29 @@ public class Methods {
         System.out.println(PiExponentiation(14));
     }
 
-    /* METHOD WITHOUT PARAMETERS AND RETURN VALUE */
+    //     METHOD WITHOUT PARAMETERS AND RETURN VALUE
     void start() {
         System.out.println("Let's calculate:");
     }
 
-    /* METHOD WITH PARAMETERS BUT NO RETURN VALUE */
+    //     METHOD WITH PARAMETERS BUT NO RETURN VALUE
     void printSum(int a, int b) {
         int sum = a + b;
         System.out.println("Sum: " + sum);
     }
 
-    /* METHOD WITH PARAMETERS AND RETURN VALUE */
+    //     METHOD WITH PARAMETERS AND RETURN VALUE
     int calculateSum(int a, int b) {
         int sum = a + b;
         return sum;
     }
 
-    /* METHOD WITH RETURN VALUE BUT NO PARAMETERS */
+    //     METHOD WITH RETURN VALUE BUT NO PARAMETERS
     private String getGreeting() {
         return "So far, so good";
     }
 
-    /* METHOD WITH MULTIPLE PARAMETERS AND RETURN VALUE */
+    //     METHOD WITH MULTIPLE PARAMETERS AND RETURN VALUE
     double calculateAverage(double[] numbers) {
         double sum = 0;
         for (double num : numbers) {
@@ -63,7 +63,7 @@ public class Methods {
         return average;
     }
 
-    /* RECURSIVE METHOD */
+    //     RECURSIVE METHOD
     int factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -72,7 +72,7 @@ public class Methods {
         }
     }
 
-    /* METHOD WITH MULTIPLE PARAMETERS AND RETURN VALUE */
+    //    METHOD WITH MULTIPLE PARAMETERS AND RETURN VALUE
     int findMax(int... numbers) {
         int max = Integer.MIN_VALUE;
         for (int num : numbers) {
@@ -83,8 +83,8 @@ public class Methods {
         return max;
     }
 
-    /* STATIC RECURSIVE METHOD
-   Accessing Static Methods: Since static methods are associated with the
+    //    STATIC RECURSIVE METHOD
+   /* Accessing Static Methods: Since static methods are associated with the
    class itself, they can be accessed directly using the class name, followed
    by the method name. No Instance Dependency: Static methods do not depend on
    any specific instance of the class. They can be called even if no objects of

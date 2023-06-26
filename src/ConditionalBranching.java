@@ -4,8 +4,7 @@ public class ConditionalBranching {
     public static void main(String[] args) {
         Random rnd = new Random();
 
-        /* IF
-         */
+//        IF
         int x = rnd.nextInt(-1000, 1000);
         System.out.println(x);
         if (x > 0) {
@@ -13,8 +12,7 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /* IF-ELSE
-         */
+//        IF-ELSE
         int age = rnd.nextInt(0, 100);
         System.out.println(age);
         if (age >= 18) {
@@ -24,8 +22,7 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /* IF-ELSE-IF-ELSE
-         */
+//        IF-ELSE-IF-ELSE
         int score = rnd.nextInt(0, 100);
         System.out.println(score);
         if (score >= 90) {
@@ -39,16 +36,14 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /* SHORT IF
-         */
+//        SHORT IF
         int y = rnd.nextInt(-1000, 1000);
         System.out.println(y);
         String result = (y > 0) ? "Positive" : "Negative";
         System.out.println(result);
         System.out.println();
 
-        /* SWITCH STATEMENT
-         */
+//        SWITCH STATEMENT
         int dayOfWeek = rnd.nextInt(1, 7);
         System.out.println(dayOfWeek);
         switch (dayOfWeek) {
@@ -66,8 +61,7 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /* FALL-THROUGH-SWITCH
-         */
+//        FALL-THROUGH-SWITCH
         System.out.println(dayOfWeek);
         switch (dayOfWeek) {
             case 1:
@@ -86,8 +80,7 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /* ENUMERATED SWITCH
-         */
+//        ENUMERATED SWITCH
         enum Month {
             JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE,
             JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
@@ -121,8 +114,7 @@ public class ConditionalBranching {
         }
         System.out.println();
 
-        /*  ARROW-FORM SWITCH
-         */
+//        ARROW-FORM SWITCH
         System.out.println(dayOfWeek);
         String dayName = switch (dayOfWeek) {
             case 1 -> "Monday";

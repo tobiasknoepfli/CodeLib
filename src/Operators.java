@@ -4,8 +4,7 @@ public class Operators {
     public static void main(String[] args) {
         int a = 1, b = 2, c = 3, d = 4;
 
-        /* ARITHMETIC OPERATORS
-         */
+//        ARITHMETIC OPERATORS
         System.out.println(a + b); //Addition
         System.out.println(d - c); //Subtraction
         System.out.println(b * c); //Multiplication
@@ -13,8 +12,7 @@ public class Operators {
         System.out.println(d % c); //Modulus
         System.out.println();
 
-        /* ASSIGNMENT OPERATORS
-         */
+//        ASSIGNMENT OPERATORS
         System.out.println(b);
         b += 5;     // x = x + 5
         System.out.println(b);
@@ -28,8 +26,7 @@ public class Operators {
         System.out.println(b);
         System.out.println();
 
-        /* COMPARISON OPERATORS
-         */
+//        COMPARISON OPERATORS
         System.out.println((a == b));    // Equality: false
         System.out.println((a != b)); // Inequality: true
         System.out.println((a > b));   // Greater than: false
@@ -38,8 +35,7 @@ public class Operators {
         System.out.println((a <= b));     // Less than or equal to: true
         System.out.println();
 
-        /* INCREMENT AND DECREMENT
-         */
+//        INCREMENT AND DECREMENT
         System.out.println(c);
         System.out.println(d);
         c++;
@@ -48,8 +44,7 @@ public class Operators {
         System.out.println(d);
         System.out.println();
 
-        /* TENARY OPERATOR
-         */
+//        TENARY OPERATOR
         int max = (a > b) ? a : b;
         System.out.println(max);
 
