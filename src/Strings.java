@@ -8,7 +8,7 @@ public class Strings {
         String name = new String("John Doe");
 
         /* CONCACTENATION
-        */
+         */
         String personalGreeting = greeting + " " + name;
         System.out.println(personalGreeting);
 
@@ -36,14 +36,14 @@ public class Strings {
         System.out.println(areEqual);
 
         /* CONVERSION
-        */
+         */
         String lowerCaseMessage = personalGreeting.toLowerCase();
         String upperCaseMessage = personalGreeting.toUpperCase();
         System.out.println(lowerCaseMessage);
         System.out.println(upperCaseMessage);
 
         /* TRIMMING WHITESPACE
-        */
+         */
         String input = "   Hello, World!   ";
         String nextPart = "John is here!";
         String trimmedInput = input.trim();
@@ -83,22 +83,22 @@ public class Strings {
         System.out.println(index);
 
         /* REVERSING A STRING
-        */
+         */
         StringBuilder reversed = new StringBuilder(sentence).reverse();
         System.out.println(reversed);
 
         /* JOINING STRINGS
         Syntax:    join(delimiter, Array) */
-        String[] joinWords = { "Hello", "World", "Java" };
+        String[] joinWords = {"Hello", "World", "Java"};
         String joined = String.join(" ", joinWords);
         System.out.println(joined);
 
         /* SPECIAL CHARACTERS
          */
-        System.out.println("Backslash:"+"\t"+"\t"+"\t"+"\\"+"\\");
-        System.out.println("Tab:"+"\t"+"\t"+"\t"+"\t"+  "\\" +"t");
-        System.out.println("New Line:"+"\t"+ "\t"+"\t"+"\\"+"n");
-        System.out.println("Quotation Marks>"+"" +
-                "\t"+"\\"+ "\"");
+        System.out.println("Backslash:" + "\t" + "\t" + "\t" + "\\" + "\\");
+        System.out.println("Tab:" + "\t" + "\t" + "\t" + "\t" + "\\" + "t");
+        System.out.println("New Line:" + "\t" + "\t" + "\t" + "\\" + "n");
+        System.out.println("Quotation Marks>" + "" +
+                "\t" + "\\" + "\"");
     }
 }
