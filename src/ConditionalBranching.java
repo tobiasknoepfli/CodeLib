@@ -11,6 +11,7 @@ public class ConditionalBranching {
         if (x > 0) {
             System.out.println("x is positive");
         }
+        System.out.println();
 
         /* IF-ELSE
          */
@@ -21,6 +22,7 @@ public class ConditionalBranching {
         } else {
             System.out.println("You are not an adult");
         }
+        System.out.println();
 
         /* IF-ELSE-IF-ELSE
          */
@@ -35,17 +37,19 @@ public class ConditionalBranching {
         } else {
             System.out.println("D");
         }
+        System.out.println();
 
         /* SHORT IF
          */
-        int y = rnd.nextInt(-1000,1000);
+        int y = rnd.nextInt(-1000, 1000);
         System.out.println(y);
         String result = (y > 0) ? "Positive" : "Negative";
         System.out.println(result);
+        System.out.println();
 
         /* SWITCH STATEMENT
          */
-        int dayOfWeek = rnd.nextInt(1,7);
+        int dayOfWeek = rnd.nextInt(1, 7);
         System.out.println(dayOfWeek);
         switch (dayOfWeek) {
             case 1:
@@ -60,6 +64,7 @@ public class ConditionalBranching {
             default:
                 System.out.println("Invalid day");
         }
+        System.out.println();
 
         /* FALL-THROUGH-SWITCH
          */
@@ -79,6 +84,7 @@ public class ConditionalBranching {
             default:
                 System.out.println("Invalid day");
         }
+        System.out.println();
 
         /* ENUMERATED SWITCH
          */
@@ -86,6 +92,7 @@ public class ConditionalBranching {
             JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE,
             JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER
         }
+        System.out.println();
 
         Month month = Month.JULY;
         switch (month) {
@@ -112,6 +119,7 @@ public class ConditionalBranching {
             default:
                 System.out.println("Invalid month");
         }
+        System.out.println();
 
         /*  ARROW-FORM SWITCH
          */
