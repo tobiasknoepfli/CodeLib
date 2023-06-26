@@ -4,29 +4,22 @@ public class Methods {
         double[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         methods.start();
-        System.out.println();
 
         methods.printSum(5, 10);
-        System.out.println();
 
         int sum = methods.calculateSum(55, 10);
         System.out.println(sum);
-        System.out.println();
 
         methods.getGreeting();
-        System.out.println();
 
         double f = methods.calculateAverage(numbers);
         System.out.println(f);
-        System.out.println();
 
         int a = methods.factorial(10);
         System.out.println(a);
-        System.out.println();
 
         int b = methods.findMax(345, 645, 5, 123, 2, 535, 234, 23, 4);
         System.out.println(b);
-        System.out.println();
 
         System.out.println(PiExponentiation(14));
     }

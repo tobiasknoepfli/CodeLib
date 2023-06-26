@@ -10,7 +10,6 @@ public class Operators {
         System.out.println(b * c); //Multiplication
         System.out.println(d / b); //Division
         System.out.println(d % c); //Modulus
-        System.out.println();
 
 //        ASSIGNMENT OPERATORS
         System.out.println(b);
@@ -24,7 +23,6 @@ public class Operators {
         System.out.println(b);
         b %= 3;     // x = x % 3
         System.out.println(b);
-        System.out.println();
 
 //        COMPARISON OPERATORS
         System.out.println((a == b));    // Equality: false
@@ -33,7 +31,6 @@ public class Operators {
         System.out.println((a < b));      // Less than: true
         System.out.println((a >= b));  // Greater than or equal to: false
         System.out.println((a <= b));     // Less than or equal to: true
-        System.out.println();
 
 //        INCREMENT AND DECREMENT
         System.out.println(c);
@@ -42,7 +39,6 @@ public class Operators {
         d--;
         System.out.println(c);
         System.out.println(d);
-        System.out.println();
 
 //        TENARY OPERATOR
         int max = (a > b) ? a : b;

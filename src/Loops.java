@@ -6,7 +6,6 @@ public class Loops {
         for (int a = 1; a <= 5; a++) {
             System.out.print(a + " ");
         }
-        System.out.println();
 
 //        WHILE-LOOP
         /* Is used when the number of iterations is not known in advance,
@@ -16,7 +15,6 @@ public class Loops {
             System.out.print(b + " ");
             b++;
         }
-        System.out.println();
 
 //        DO-WHILE-LOOP
         /* Is similar to the while loop, but it ensures that the loop body
@@ -26,7 +24,6 @@ public class Loops {
             System.out.print(c + " ");
             c++;
         } while (c <= 5);
-        System.out.println();
 
 //        ENHANCED FOR-LOOP or FOR-EACH-LOOP
         /* Is used to iterate over arrays or collections. */
@@ -34,7 +31,6 @@ public class Loops {
         for (String name : names) {
             System.out.print(name + " ");
         }
-        System.out.println();
 
 //        NESTED LOOPS
         /* You can have loops within loops, known as nested loops, to perform
@@ -43,7 +39,6 @@ public class Loops {
             for (int e = 1; e <= d; e++) {
                 System.out.print("* ");
             }
-            System.out.println();
         }
 
 
