@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class TerminalOperations {
     public static void main(String[] args) {
+
         /* READING WORDS
          */
         Scanner scanner = new Scanner(System.in);
