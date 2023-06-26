@@ -10,7 +10,7 @@ public class Loops {
 
         /* WHILE-LOOP
         Is used when the number of iterations is not known in advance,
-         and the loop continues as long as a certain condition is true. */
+        and the loop continues as long as a certain condition is true. */
         int b = 1;
         while (b <= 5) {
             System.out.print(b + " ");
