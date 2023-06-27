@@ -1,3 +1,5 @@
+package main;
+
 public class Inheritance {
 
     //    PARENT CLASS / SUPERCLASS

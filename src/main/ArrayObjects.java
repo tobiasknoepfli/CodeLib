@@ -1,3 +1,5 @@
+package main;
+
 import java.util.Arrays;
 
 public class ArrayObjects {
@@ -47,7 +49,7 @@ public class ArrayObjects {
         System.arraycopy(array1, 0, copy1, 0, array1.length);
         intToString(array1);
         intToString(copy1);
-        /* Using ArrayObjects.copyOf() */
+        /* Using main.ArrayObjects.copyOf() */
         int[] copy2 = Arrays.copyOf(array2,array2.length);
         intToString(array2);
         intToString(copy2);

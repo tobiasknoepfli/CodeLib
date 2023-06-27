@@ -1,3 +1,5 @@
+package main;
+
 public class Methods {
     public static void main(String[] args) {
         Methods methods = new Methods();
@@ -77,7 +79,7 @@ public class Methods {
     }
 
     //    STATIC RECURSIVE METHOD
-   /* Accessing Static Methods: Since static methods are associated with the
+   /* Accessing Static main.Methods: Since static methods are associated with the
    class itself, they can be accessed directly using the class name, followed
    by the method name. No Instance Dependency: Static methods do not depend on
    any specific instance of the class. They can be called even if no objects of

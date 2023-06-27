@@ -1,3 +1,5 @@
+package main;
+
 public class AbstractClasses {
     //    ABSTRACT PARENT CLASS
     abstract static class Animal {

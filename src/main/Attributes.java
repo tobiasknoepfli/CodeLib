@@ -1,3 +1,5 @@
+package main;
+
 public class Attributes {
     public static class Person {
 
