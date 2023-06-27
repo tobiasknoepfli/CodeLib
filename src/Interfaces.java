@@ -30,7 +30,7 @@ public class Interfaces {
         /* hasFungus does not need to be implemented because it is a static method */
     }
 
-    // CLASS IMPLEMENTING DISGUSTING INTERFACE
+//     CLASS IMPLEMENTING DISGUSTING INTERFACE
     public static class Tequila implements Disgusting {
         boolean worm, fungus;
 
