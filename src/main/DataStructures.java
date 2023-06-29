@@ -16,6 +16,7 @@ public class DataStructures {
         map.put("Alice", 13);
         map2.put("Emily", 34);
         map2.put("John", 25);
+        map2.put(null,null);
         System.out.println(map);
         System.out.println(map2);
 
@@ -28,6 +29,7 @@ public class DataStructures {
 
         /* removing elements */
         map.remove("Alice");
+        map.remove(null);
         System.out.println(map);
 
         /* checking existence */
@@ -35,6 +37,38 @@ public class DataStructures {
 
         /* Size */
         System.out.println(map.size());
+
+//        HASHTABLE
+        /* unique key-value pair that provides fast lookup and retrieval based on keys.
+        HashMap is useful when you need to store and retrieve data based on unique keys,
+        and when fast access to elements is required. HashTable is thread-safe, but
+        has lower performance. It also doesn't allow null keys or values. */
+        Hashtable<String,Integer> metals = new Hashtable<>();
+
+        /* adding elements */
+        metals.put("Gold",18);
+        metals.put("Platinum",24);
+        metals.put("Copper",14);
+        metals.put("Copper",14);
+        try {
+            metals.put(null, 23);
+        } catch(NullPointerException n){
+            System.out.println("null not allowed");
+        }
+        System.out.println(metals);
+
+        /* retrieving elements */
+        System.out.println(metals.get("Platinum"));
+
+        /* removing elements */
+        metals.remove("Copper");
+        System.out.println(metals);
+
+        /* checking existence */
+        System.out.println(metals.containsKey("Copper") + ", " + metals.containsValue(18));
+
+        /* Size */
+        System.out.println(metals.size());
 
 //        HASHSET
         /* unordered collection of unique elements, does not allow duplicates.
