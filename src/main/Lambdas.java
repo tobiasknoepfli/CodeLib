@@ -11,29 +11,29 @@ import static java.lang.Math.*;
 
 public class Lambdas {
     //    LAMBDA WITH SINGLE PARAMETER
-    /* Syntax: Function<input,output> */
+    /* Syntax: Function<input,output> || T -> R */
     static Function<Double, Double> square = x -> pow(x.doubleValue(), 2);
 
     //    LAMBDA WITH MULTIPLE PARAMETERS
-    /* Syntax: BiFunction<input,input,output> */
+    /* Syntax: BiFunction<input,input,output> || T,R -> S */
     static BiFunction<Integer, Integer, Integer> sum = (a, b) -> {
         return a + b;
     };
 
     //    PREDICATE LAMBDA
-    /* boolean-valued function of one argument */
+    /* boolean-valued function of one argument || T -> boolean */
     static Predicate<Double> isEven = x -> x % 2 == 0;
 
     //    CONSUMER LAMBDA
-    /* represents an operation that takes a single argument and returns no result */
+    /* represents an operation that takes a single argument and returns no result || T -> void */
     static Consumer<String> printer = message -> System.out.println(message);
 
     //    FUNCTION LAMBDA
-    /* takes one argument and produces a result */
+    /* takes one argument and produces a result || T -> R */
     static Function<Integer, String> stringify = x -> String.valueOf(x);
 
     //    SUPPLIER LAMBDA
-    /* represents a supplier of results, no input needed */
+    /* represents a supplier of results, no input needed || () -> T */
     static Supplier<Double> randomValue = () -> Math.random() * 100;
 
     //    LAMBDA WITH METHOD REFERENCE

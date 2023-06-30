@@ -16,7 +16,7 @@ public class DataStructures {
         map.put("Alice", 13);
         map2.put("Emily", 34);
         map2.put("John", 25);
-        map2.put(null,null);
+        map2.put(null, null);
         System.out.println(map);
         System.out.println(map2);
 
@@ -43,16 +43,16 @@ public class DataStructures {
         HashMap is useful when you need to store and retrieve data based on unique keys,
         and when fast access to elements is required. HashTable is thread-safe, but
         has lower performance. It also doesn't allow null keys or values. */
-        Hashtable<String,Integer> metals = new Hashtable<>();
+        Hashtable<String, Integer> metals = new Hashtable<>();
 
         /* adding elements */
-        metals.put("Gold",18);
-        metals.put("Platinum",24);
-        metals.put("Copper",14);
-        metals.put("Copper",14);
+        metals.put("Gold", 18);
+        metals.put("Platinum", 24);
+        metals.put("Copper", 14);
+        metals.put("Copper", 14);
         try {
             metals.put(null, 23);
-        } catch(NullPointerException n){
+        } catch (NullPointerException n) {
             System.out.println("null not allowed");
         }
         System.out.println(metals);
@@ -237,6 +237,54 @@ public class DataStructures {
         /* Size */
         System.out.println(treeSet.size());
 
+//        PRIORITYQUEUE
+        /* orders its elements based on their natural order or a custom
+        comparator provided during its creation */
+        PriorityQueue<String> priorityQueue = new PriorityQueue<>();
 
+        /* adding elements */
+        priorityQueue.offer("Honda"); //if the queue is full, no exception is thrown
+        priorityQueue.add("Suzuki"); // if the queue is full, throws exception
+        priorityQueue.addAll(Arrays.asList("Yamaha", "Ducati", "BMW"));
+        System.out.println(priorityQueue);
+
+        /* retrieving the head element */
+        System.out.println(priorityQueue.peek());
+
+        /* removing the head element */
+        System.out.println(priorityQueue.poll());
+        System.out.println(priorityQueue);
+
+//        CUSTOM PRIORITYQUEUE WITH COMPARABLE INTERFACE
+        class Person implements Comparable<Person> {
+            private String name;
+            private int age;
+
+            public Person(String name, int age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            public String getName() {
+                return name;
+            }
+
+            public Integer getAge() {
+                return age;
+            }
+
+            @Override
+            public int compareTo(Person other) {
+                return Integer.compare(this.age, other.age);
+            }
+        }
+
+        PriorityQueue<Person> pq = new PriorityQueue<>();
+        pq.addAll(Arrays.asList(new Person("Alice", 15), new Person("Bob", 35), new Person("Yuki", 19), new Person("Sarah", 48)));
+
+        while (!pq.isEmpty()) {
+            Person person = pq.poll();
+            System.out.println(person.getName() + ", " + person.getAge());
+        }
     }
 }
