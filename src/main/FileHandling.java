@@ -1,6 +1,5 @@
 package main;
 
-import javax.swing.plaf.metal.MetalIconFactory;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -118,7 +117,6 @@ public class FileHandling {
         }
 
 //        LISTING CONTENTS OF A FOLDER
-        Path filesFolder = new File("." + "/src/files").toPath();
         File fileA = new File("." + "/src/files/fileA.txt");
         File fileB = new File("." + "/src/files/fileB.txt");
         try {
