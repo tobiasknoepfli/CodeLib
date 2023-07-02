@@ -1,5 +1,7 @@
 package main;
 
+import org.w3c.dom.Text;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -74,36 +76,6 @@ public class RegEx {
         text = "This is the end\nAnother line ends with end";
         isMatch = text.matches(pattern);
         System.out.println(isMatch);
-
-//        EXTRACTING EMAIL ADDRESSES FROM TEXT
-        pattern = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b";
-        text = "Contact us at info@example.com or support@example.com";
-        Pattern emailPattern = Pattern.compile(pattern);
-        matcher = emailPattern.matcher(text);
-        while (matcher.find()) {
-            String email = matcher.group();
-            System.out.println(email);
-        }
-
-//        VALIDATING A PHONE NUMBER
-        pattern = "\\d{3} \\d{3} \\d{2} \\d{2}";
-        String phoneNumber = "079 960 51 42";
-        boolean isValid = phoneNumber.matches(pattern);
-        System.out.println(isValid);
-
-//        SPLITTING TEXT INTO WORDS
-        pattern = "\\W+"; //Non-word characters as delimiter
-        text = "Hello, world! How are you today?";
-        String[] words = text.split(pattern);
-        for (String word : words) {
-            System.out.println(word);
-        }
-
-//        REPLACING TEXT
-        pattern = "\\bapple\\b";
-        text = "I have an apple and a banana. I love apples.";
-        String replacedText = text.replaceAll(pattern, "orange");
-        System.out.println(replacedText);
 
 //        \d
         /* Matches any digit (0-9) */
@@ -198,6 +170,63 @@ public class RegEx {
             System.out.println(group1);
             System.out.println(group2);
         }
+
+        //        EXTRACTING EMAIL ADDRESSES FROM TEXT
+        pattern = "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b";
+        text = "Contact us at info@example.com or support@example.com";
+        Pattern emailPattern = Pattern.compile(pattern);
+        matcher = emailPattern.matcher(text);
+        while (matcher.find()) {
+            String email = matcher.group();
+            System.out.println(email);
+        }
+
+//        VALIDATING A PHONE NUMBER
+        pattern = "\\d{3} \\d{3} \\d{2} \\d{2}";
+        String phoneNumber = "079 960 51 42";
+        boolean isValid = phoneNumber.matches(pattern);
+        System.out.println(isValid);
+
+//        SPLITTING TEXT INTO WORDS
+        pattern = "\\W+"; //Non-word characters as delimiter
+        text = "Hello, world! How are you today?";
+        String[] words = text.split(pattern);
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+//        REPLACING TEXT
+        pattern = "\\bapple\\b";
+        text = "I have an apple and a banana. I love apples.";
+        String replacedText = text.replaceAll(pattern, "orange");
+        System.out.println(replacedText);
+
+//        EXTRACTING DOMAIN NAME FROM URLs
+        pattern = "https?://([\\w.-]+)";
+        String url = "https://www.example.com";
+        regex = Pattern.compile(pattern);
+        matcher = regex.matcher(url);
+        if (matcher.find()) {
+            String domain = matcher.group(1);
+            System.out.println(domain);
+        }
+
+//        REMOVING HTML TAGS FROM TEXT
+        pattern = "<[^>]+>";
+        text = "<p>Hello, <b>world!</b></p>";
+        String strippedText = text.replaceAll(pattern, "");
+        System.out.println(strippedText);
+
+//        EXTRACTING HASHTAGS FROM SOCIAL MEDIA POSTS
+        pattern = "#(\\w+)";
+        String post = "Having a great time at #vacation. #sun #beach";
+        regex = Pattern.compile(pattern);
+        matcher = regex.matcher(post);
+        while (matcher.find()) {
+            String hashtag = matcher.group(1);
+            System.out.println(hashtag);
+        }
+
 
     }
 }
