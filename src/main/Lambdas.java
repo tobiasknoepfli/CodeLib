@@ -23,6 +23,7 @@ public class Lambdas {
     //    PREDICATE LAMBDA
     /* boolean-valued function of one argument || T -> boolean */
     static Predicate<Double> isEven = x -> x % 2 == 0;
+    static Predicate<Double> isGT4  = e -> e > 4;
 
     //    CONSUMER LAMBDA
     /* represents an operation that takes a single argument and returns no result || T -> void */
@@ -51,6 +52,9 @@ public class Lambdas {
         System.out.println(square.apply(3.14));
         System.out.println(sum.apply(5, 9));
         System.out.println(isEven.test(6.0));
+        System.out.println(isGT4.test(5.5));
+        System.out.println(isGT4.and(isEven).test(6.0));
+
         printer.accept("Hi");
         System.out.println(stringify.apply(45));
         System.out.println(randomValue.get());
