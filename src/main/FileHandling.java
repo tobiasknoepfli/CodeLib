@@ -140,7 +140,7 @@ public class FileHandling {
         Path deleteContents = new File("." + "/src/files").toPath();
         if (files != null) {
             for (File f : files) {
-                if (!(f.getName().contains("text"))){
+                if (!(f.getName().contains("text"))) {
                     f.delete();
                 }
             }
