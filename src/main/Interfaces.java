@@ -63,7 +63,9 @@ public class Interfaces {
     }
 
     //    INTERFACE WITH METHOD
-    /* has to be implemented in every class that inherits interface */
+    /* has to be implemented in every class that inherits interface
+    is a functional interface, if it has only one method */
+    @FunctionalInterface
     public interface Worm {
         public boolean hasWorm(boolean worm);
     }
