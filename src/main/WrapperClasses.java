@@ -13,7 +13,7 @@ public class WrapperClasses {
 //        UTILITY METHODS
         /* parse number */
         String numberString = "123";
-        int parsedNumber= Integer.parseInt(numberString);
+        int parsedNumber = Integer.parseInt(numberString);
 
         /* value.toSTring */
         Integer v = parsedNumber;
