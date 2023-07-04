@@ -1,0 +1,14 @@
+Entwicklungsumgebung und erstes Projekt
+
+Wir verwenden die Entwicklungsumgebung _IntelliJ IDEA_. Es gibt eine _Community_-Edition,
+welche gratis und Open Source ist. Zudem gibt es eine kostenpflichtige _Ultimate_-Edition,
+welche einige Zusatzfeatures enthält.
+
+Laden Sie IntelliJ IDEA herunter und installieren Sie das Programm.
+    Download-Seite: https://www.jetbrains.com/de-de/idea/download/
+    Registrierung für die Ultimate-Edition: https://www.jetbrains.com/de-de/community/education/#students
+
+Klicken Sie auf _New Project_ und wählen Sie als Projektart _Java_. Bevor Sie ein Java-Projekt erstellen
+können, brauchen Sie noch ein _Java Development Kit_ (JDK), welches den Java Compiler und die
+Laufzeitumgebung enthält. IntelliJ lädt dieses gerne für Sie runter.
+Wählen Sie als Version 17 aus und dann _Oracle OpenJDK 17_.
